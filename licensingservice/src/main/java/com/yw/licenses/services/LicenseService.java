@@ -1,8 +1,8 @@
-package com.thoughtmechanix.licenses.services;
+package com.yw.licenses.services;
 
-import com.thoughtmechanix.licenses.config.ServiceConfig;
-import com.thoughtmechanix.licenses.model.License;
-import com.thoughtmechanix.licenses.repository.LicenseRepository;
+import com.yw.licenses.config.ServiceConfig;
+import com.yw.licenses.model.License;
+import com.yw.licenses.repository.LicenseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class LicenseService {
     @Autowired
     ServiceConfig config;
 
-    public License getLicense(String organizationId,String licenseId) {
+    public License getLicense(String organizationId, String licenseId) {
         License license = licenseRepository.findByOrganizationIdAndLicenseId(organizationId, licenseId);
         return license.withComment(config.getExampleProperty());
     }
@@ -39,7 +39,7 @@ public class LicenseService {
     }
 
     public void deleteLicense(License license){
-        licenseRepository.delete( license.getLicenseId());
+        licenseRepository.delete( license);
     }
 
 }

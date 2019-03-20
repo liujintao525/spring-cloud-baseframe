@@ -1,4 +1,4 @@
-package com.thoughtmechanix.licenses.config;
+package com.yw.licenses.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

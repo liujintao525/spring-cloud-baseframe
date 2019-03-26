@@ -12,6 +12,7 @@
         <module>configserver</module>
         <module>licensingservice</module>
         <module>organizationservice</module>
+        <module>zuulsvr</module>
     </modules>
 
 

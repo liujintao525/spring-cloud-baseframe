@@ -19,7 +19,7 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/liujintao525/spring-cloud-baseframe/
-          searchPaths: config-repo/licensingservice,config-repo/organizationservice
+          searchPaths: config-repo/licensingservice,config-repo/organizationservice,config-repo/zuulservice
           username: liujintao525
           password: liutao5878085085
     consul:

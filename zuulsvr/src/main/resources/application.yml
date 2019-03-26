@@ -1,0 +1,5 @@
+
+zuul:
+  prefix:  /api
+  routes:
+    service-organization: /organization/**

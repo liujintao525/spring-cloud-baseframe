@@ -1,0 +1,26 @@
+server:
+  port: 5555
+
+  #Setting logging levels
+logging:
+    level:
+      com.netflix: WARN
+#      org.springframework.web: WARN
+      com.yw: DEBUG
+spring:
+  application:
+    name: zuulservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: service-config
+#      uri:  http://192.168.6.66:8888
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: service-zuul

@@ -22,6 +22,11 @@ spring:
           searchPaths: config-repo/licensingservice,config-repo/organizationservice
           username: liujintao525
           password: liutao5878085085
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: service-config
 
 
 ####

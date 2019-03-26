@@ -1,7 +1,7 @@
-spring:
-   datasource:
-     schema: database/data.sql
-     sql-script-encoding: utf-8
-   jpa:
-     hibernate:
-       ddl-auto: none
+#spring:
+##   datasource:
+##     schema: import.sql
+##     sql-script-encoding: utf-8
+#   jpa:
+#     hibernate:
+#       ddl-auto: create

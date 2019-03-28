@@ -24,3 +24,9 @@ spring:
       port: 8500
       discovery:
         serviceName: service-zuul
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

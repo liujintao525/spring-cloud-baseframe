@@ -13,6 +13,7 @@
         <module>licensingservice</module>
         <module>organizationservice</module>
         <module>zuulsvr</module>
+        <module>zipkinsvr</module>
     </modules>
 
 

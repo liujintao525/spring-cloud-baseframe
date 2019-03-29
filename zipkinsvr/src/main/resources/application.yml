@@ -1,8 +1,24 @@
 #Default port is 8761
 server:
   port: 9411
+spring:
+  application:
+    name: organizationservice
+  profiles:
+    active:
+      default
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: service-zipkin
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #Setting logging levels
 logging:
   level:

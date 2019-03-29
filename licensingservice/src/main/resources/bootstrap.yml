@@ -5,7 +5,7 @@ spring:
     name: licensingservice
   profiles:
     active:
-      default
+      dev
   cloud:
     config:
       discovery:
